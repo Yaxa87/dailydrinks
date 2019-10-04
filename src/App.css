@@ -1,14 +1,10 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 6vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +13,68 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.main-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order-card {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 1px #cccccc;
+}
+
+.flex-50 {
+  width: 50%;
+  padding: 20px;
+}
+
+.form-field {
+  display: flex;
+}
+
+.text-input {
+  width: calc(100% - 100px);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: solid 1px #cccccc;
+}
+
+.list-label {
+  display: inline-block;
+  width: 70px;
+}
+
+.button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2fb8de;
+  color: white;
+}
+
+.display-block {
+  display: block;
+}
+
+input:disabled,
+textarea:disabled {
+  background-color: #f2f2f2;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-50 {
+    width: 100%;
+  }
+
 }
